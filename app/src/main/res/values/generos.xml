@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categorias_array">
+        <item>Desayuno</item>
+        <item>Postre</item>
+        <item>Vegano</item>
+        <item>Aperitivo</item>
+        <item>Primeros platos</item>
+        <item>Segundos platos</item>
+        <item>Mexicana</item>
+        <item>Japonesa</item>
+        <item>India</item>
+        <item>Peruana</item>
+    </string-array>
+</resources>

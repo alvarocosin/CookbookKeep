@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1022350321287",
+    "project_id": "cookbookkeep",
+    "storage_bucket": "cookbookkeep.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1022350321287:android:652b24debd02321662ba22",
+        "android_client_info": {
+          "package_name": "com.example.cookbookkeep"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1022350321287-48f28tppgm4lhsugqvlpdor672qogso6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeGJ7qMurbsve4ZO4_651jTvMmWK_1W-U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1022350321287-48f28tppgm4lhsugqvlpdor672qogso6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

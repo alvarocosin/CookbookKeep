@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.RegisterActivity">
+
+    <TextView
+        android:id="@+id/textViewNombreRec"
+        android:layout_width="263dp"
+        android:layout_height="120dp"
+        android:fontFamily="serif-monospace"
+        android:text="Cookbook Keep"
+        android:textAlignment="center"
+        android:textSize="50dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.175" />
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="4dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@+id/textViewNombreRec"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <View
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNombreRec" />
+
+    <EditText
+        android:id="@+id/editTextNombreR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNombreRec" />
+
+    <EditText
+        android:id="@+id/editTextEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Edad"
+        android:inputType="number"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/editTextNombreR"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNombreR" />
+
+    <EditText
+        android:id="@+id/editTextPasswordRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="************"
+        android:inputType="textPassword"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/editTextCorreoRegistro"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCorreoRegistro" />
+
+    <EditText
+        android:id="@+id/editTextCorreoRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Correo"
+        android:inputType="textEmailAddress"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/editTextEdad"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEdad" />
+
+    <Button
+        android:id="@+id/buttonRegistrar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Registrarse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPasswordRegistro" />
+
+    <Button
+        android:id="@+id/buttonCancelar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Cancelar"
+        app:layout_constraintStart_toStartOf="@+id/buttonRegistrar"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRegistrar" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextCorreoRegistro"
+        app:layout_constraintTop_toTopOf="@+id/editTextCorreoRegistro"
+        app:srcCompat="@drawable/ic_baseline_mail_outline_24"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextPasswordRegistro"
+        app:layout_constraintTop_toTopOf="@+id/editTextPasswordRegistro"
+        app:srcCompat="@drawable/ic_baseline_vpn_key_24"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNombreR"
+        app:layout_constraintTop_toTopOf="@+id/editTextNombreR"
+        app:srcCompat="@drawable/ic_baseline_person_24"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextEdad"
+        app:layout_constraintTop_toTopOf="@+id/editTextEdad"
+        app:srcCompat="@drawable/ic_baseline_calendar_today_24"
+        tools:ignore="VectorDrawableCompat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

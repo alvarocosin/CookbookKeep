@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.RecetaActivity">
+
+    <TextView
+        android:id="@+id/textViewNombreReceta"
+        android:layout_width="327dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="64dp"
+        android:text="Nombre de receta"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTiempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="• Tiempo: 35 minutos"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/textViewNombreReceta"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNombreReceta" />
+
+    <TextView
+        android:id="@+id/textViewPorcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="• Porción: 3 personas"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/textViewTiempo"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTiempo" />
+
+    <TextView
+        android:id="@+id/textViewCalorias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="• Calorías: 230 kcal."
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/textViewPorcion"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPorcion" />
+
+    <TextView
+        android:id="@+id/textViewCategoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="• Categoría: Segundo plato"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/textViewCalorias"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCalorias" />
+
+    <TextView
+        android:id="@+id/textViewIngredientes"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Ingredientes"
+        app:layout_constraintStart_toStartOf="@+id/textViewTitIng"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitIng" />
+
+    <TextView
+        android:id="@+id/textViewPreparacion"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Preparación"
+        app:layout_constraintStart_toStartOf="@+id/textViewTitPrep"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitPrep" />
+
+    <TextView
+        android:id="@+id/textViewTitIng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Ingredientes"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textViewCategoria"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCategoria" />
+
+    <TextView
+        android:id="@+id/textViewTitPrep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Preparación"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textViewIngredientes"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIngredientes" />
+
+    <Button
+        android:id="@+id/btnEditar"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="76dp"
+        android:drawableLeft="@drawable/ic_baseline_edit_24"
+        android:text="Editar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnBorrar"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="#AF5050"
+        android:drawableLeft="@drawable/ic_baseline_delete_24"
+        android:text="Borrar"
+        app:layout_constraintBottom_toBottomOf="@+id/btnEditar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnEditar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

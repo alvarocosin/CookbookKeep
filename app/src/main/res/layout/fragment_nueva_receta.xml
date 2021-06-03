@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.NuevaRecetaFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textViewCal"
+            android:layout_width="32dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="12dp"
+            android:text="kcal."
+            app:layout_constraintStart_toEndOf="@+id/editTextCaloriasR"
+            app:layout_constraintTop_toTopOf="@+id/editTextCaloriasR" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="52dp"
+            android:text="Añadir receta"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:text="Rellena los datos de la nueva receta"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintBottom_toTopOf="@+id/editTextNombreR"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            app:layout_constraintVertical_bias="0.346" />
+
+        <EditText
+            android:id="@+id/editTextNombreR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="96dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/edit_text_border"
+            android:ems="10"
+            android:hint="Nombre"
+            android:drawableLeft="@drawable/ic_baseline_lunch_dining_24"
+            android:inputType="textPersonName"
+            android:padding="11dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <EditText
+            android:id="@+id/editTextCaloriasR"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/edit_text_border"
+            android:drawableLeft="@drawable/ic_baseline_local_fire_department_24"
+            android:ems="10"
+            android:hint="Calorías"
+            android:inputType="number"
+            android:padding="11dp"
+            app:layout_constraintStart_toStartOf="@+id/editTextTiempoR"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTiempoR" />
+
+        <EditText
+            android:id="@+id/editTextPorcionR"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/edit_text_border"
+            android:ems="10"
+            android:hint="Porciones"
+            android:drawableLeft="@drawable/ic_baseline_people_24"
+            android:inputType="number"
+            android:padding="11dp"
+            app:layout_constraintEnd_toStartOf="@+id/textViewPersonas"
+            app:layout_constraintTop_toTopOf="@+id/editTextTiempoR" />
+
+        <Spinner
+            android:id="@+id/spinnerR"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="20dp"
+            android:entries="@array/categorias_array"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/editTextCaloriasR"
+            app:layout_constraintTop_toBottomOf="@+id/editTextCaloriasR" />
+
+        <RatingBar
+            android:id="@+id/ratingBarR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPreparacionR" />
+
+        <Button
+            android:id="@+id/btnGuardarRecetaR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="24dp"
+            android:drawableLeft="@drawable/ic_baseline_save_24"
+            android:text="Guardar"
+            app:layout_constraintStart_toStartOf="@+id/editTextPreparacionR"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBarR" />
+
+        <Button
+            android:id="@+id/btnCancelarRecetaR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:drawableLeft="@drawable/ic_baseline_cancel_24"
+            android:text="Cancelar"
+            app:layout_constraintStart_toEndOf="@+id/btnGuardarRecetaR"
+            app:layout_constraintTop_toTopOf="@+id/btnGuardarRecetaR" />
+
+        <EditText
+            android:id="@+id/editTextTiempoR"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="Tiempo"
+            android:drawableLeft="@drawable/ic_baseline_timer_24"
+            android:padding="11dp"
+            android:background="@drawable/edit_text_border"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="@+id/editTextNombreR"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNombreR" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="38dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="16dp"
+            android:text="mins."
+            app:layout_constraintStart_toEndOf="@+id/editTextTiempoR"
+            app:layout_constraintTop_toTopOf="@+id/editTextTiempoR" />
+
+        <TextView
+            android:id="@+id/textViewPersonas"
+            android:layout_width="32dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="16dp"
+            android:text="pers."
+            app:layout_constraintEnd_toEndOf="@+id/editTextNombreR"
+            app:layout_constraintTop_toTopOf="@+id/editTextPorcionR" />
+
+        <EditText
+            android:id="@+id/editTextIngredientesR"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/edit_text_border"
+            android:ems="10"
+            android:hint="Ingredientes"
+            android:inputType="textMultiLine"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerR" />
+
+        <EditText
+            android:id="@+id/editTextPreparacionR"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/edit_text_border"
+            android:ems="10"
+            android:hint="Preparación"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextIngredientesR" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

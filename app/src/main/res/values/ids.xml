@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="editTextNombreR" type="id" />
+    <item name="editTextEdad" type="id" />
+    <item name="editTextPasswordRegistro" type="id" />
+    <item name="editTextCorreoRegistro" type="id" />
+    <item name="buttonRegistrar" type="id" />
+    <item name="buttonCancelar" type="id" />
+    <item name="imageView4" type="id" />
+    <item name="imageView5" type="id" />
+    <item name="imageView6" type="id" />
+    <item name="imageView7" type="id" />
+</resources>

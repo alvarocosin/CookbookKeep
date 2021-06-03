@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cookbookkeep">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_cookbook"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_cookbook_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CookbookKeep">
+        <activity
+            android:name=".views.RecetaEditActivity"
+            android:theme="@style/Theme.CookbookKeep.NoActionBar"/>
+        <activity
+            android:name=".views.RecetaActivity"
+            android:theme="@style/Theme.CookbookKeep.NoActionBar"/>
+        <activity
+            android:name=".views.MainActivity"
+            android:theme="@style/Theme.CookbookKeep" />
+        <activity
+            android:name=".views.RegisterActivity"
+            android:theme="@style/Theme.CookbookKeep.NoActionBar" />
+        <activity
+            android:name=".views.LoginActivity"
+            android:theme="@style/Theme.CookbookKeep.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
